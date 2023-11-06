@@ -116,9 +116,28 @@ As a user, I would like to be able to see a chart showing the upcoming events in
   - **When** the user clicks the button to see a chart of those events in all the cities as a comparison;
   - **Then** a chart with the number of upcoming events for every city, will be shown to the user.
 
+
 **USE OF SERVERLESS FUNCTION IN THE MEET APP**
 
-- Anytime this app interacts with the Google Calendar API, it will have to use serverless functions to serve the necessary data to the user. An example would be if the user wants to filter events it would trigger serverless functions to interact with the API to display the data their requesting. Another example would be when a user wants to see the data from the API being displayed on a chart. This would also cause serverless functions to occur resulting in the data being fetched and displayed on the graph.
+Filter Events by City:
+- Use serverless functions to fetch event data from Google Calendar based on the selected city.
+  
+  Show/Hide Event Details:
+- Implement serverless functions to toggle event details without page reloading.
+  
+Specify Number of Events:
+- Create serverless functions to dynamically adjust the number of displayed events.
+  
+Use the App When Offline:
+- Serverless functions manage data caching and retrieval for offline use.
+  
+Add an App Shortcut to the Home Screen:
+- Utilize serverless functions to streamline adding the app to the device's home screen.
+  
+Display Charts Visualizing Event Details:
+- Serverless functions process event data and generate charts for visualization, reducing client-side load.
+
+Also, Serverless functions provide scalability, cost-efficiency, and lightweight backend support for these features. AWS Lambda is a suitable platform for their deployment.
 
 ## Project Link
 
