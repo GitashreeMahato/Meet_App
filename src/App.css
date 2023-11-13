@@ -1,5 +1,177 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+
 .App {
   text-align: center;
+  padding: 2% 5%;
+}
+
+.App * {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin: 13px 0;
+  padding: 15px;
+}
+
+input[type='text'],
+input[type="number"]
+ {
+  padding: 8px 6px 8px 10px;
+  border-radius: 12px;
+  outline: none;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  line-height: 20px;
+  align-self: center;
+  height: 38px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.city {
+  width: 250px;
+}
+
+#city-search {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.location {
+  padding: 15px;
+  font-size: 25px;
+}
+
+.summary {
+  font-size: 20px;
+  padding: 10px;
+  color: rgb(52, 58, 123);
+}
+
+.created {
+  font-size: 15px;
+  color: rgb(87, 87, 87);
+}
+
+.des-info {
+  font-size: 19px;
+}
+
+.suggestions {
+  width: 250px;
+  position: absolute;
+  top: 45px;
+  z-index: 2;
+  align-self: center;
+  margin: 0;
+  font-size: 14px;
+  box-shadow: 10px 10px 16px -12px rgba(0, 0, 0, 0.75);
+}
+
+.suggestions > li {
+  text-align: left;
+  padding: 8px 6px 8px 10px;
+  background-color: #eee;
+  cursor: default;
+}
+
+.suggestions > li:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.suggestions > li:hover {
+  background-color: rgb(23, 34, 198);
+  color: #fff;
+}
+
+.event {
+  padding: 30px 10px 35px;
+  margin-bottom: 10px;
+  text-align: left;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-image: linear-gradient(180deg, #fff, #f5f5fa);
+  position: relative;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.details-btn {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  padding: 5px 8px;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  font-weight: 600;
+  color: rgb(72, 76, 122);
+  font-size: 12px;
+  height: 38px;
+  padding: 8px 24px;
+  border-radius: 50px;
+  background-image: linear-gradient(180deg, #fff, #f5f5fa);
+  box-shadow: 0 4px 11px 0 rgb(37 44 97 / 15%),
+    0 1px 3px 0 rgb(93 100 148 / 20%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .App {
+  text-align: center;
+  padding: 2% 5%;
 }
 
 .App-logo {
@@ -13,7 +185,11 @@
   }
 }
 
-.App-header {
+li {
+  list-style-type: none;
+}
+
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,9 +198,9 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
-.App-link {
+/* .App-link {
   color: #61dafb;
 }
 
@@ -35,4 +211,5 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
+
