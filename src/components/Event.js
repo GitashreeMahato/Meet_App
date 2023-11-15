@@ -17,7 +17,7 @@ const Event = ({ event }) => {
         <p className='created'>{(event.created)}</p>
       {showDetails ? (<div 
       id='event-details' 
-      className="des-info animate__animated animate__fadeIn">
+      className="event-details des-info animate__animated animate__fadeIn">
         {event.description}
         </div>) : null}
   
