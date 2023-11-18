@@ -7,7 +7,7 @@ import userEvent from "@testing-library/user-event";
 describe('<NumberOfEvents /> component', ()=>{
     let NumberOfEventsComponent;
     beforeEach(()=>{
-        NumberOfEventsComponent= render(<NumberOfEvents setCurrentNOE= {()=>{}} />)
+        NumberOfEventsComponent= render(<NumberOfEvents setCurrentNOE= {()=>{}} setErrorAlert={()=>{}} />)
     })
     test('has an element with role of a textbox', ()=>{
         const numberTextbox = NumberOfEventsComponent.queryByRole('textbox');

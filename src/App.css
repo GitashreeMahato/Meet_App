@@ -125,6 +125,14 @@ input[type="number"]
   box-shadow: 0 4px 11px 0 rgb(37 44 97 / 15%),
     0 1px 3px 0 rgb(93 100 148 / 20%);
 }
+/* --------- Alert  ------------ */
+.alerts-container {
+  position: fixed;
+  top: 0px;
+  left: 20px;
+  width: 250px;
+  z-index: 1000;
+}
 
 
 
