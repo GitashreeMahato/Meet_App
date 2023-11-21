@@ -1,4 +1,5 @@
 import mockData from "./mock-data";
+import NProgress from "nprogress";
 
 const removeQuery = () => {
   let newurl;
@@ -57,6 +58,7 @@ export const extractLocations = (events) => {
     if (window.location.href.startsWith('http://localhost')) {
     return mockData;
   };
+
 // checks whether user is online or offline
   if (!navigator.onLine) {
     const events = localStorage.getItem("lastEvents");
