@@ -15,6 +15,7 @@ const removeQuery = () => {
     window.history.pushState("", "", newurl);
   }
 };
+
 // to get the access token
 const getToken = async (code) => {
   const encodeCode = encodeURIComponent(code);
