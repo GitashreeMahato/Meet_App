@@ -5,7 +5,7 @@ import NumberOfEvents from './components/NumberOfEvents';
 import './App.css';
 import { useEffect, useState } from 'react';
 import { getEvents, extractLocations } from './api';
-import { InfoAlert, ErrorAlert } from './components/Alert';
+import { InfoAlert, ErrorAlert, WarningAlert } from './components/Alert';
 
 const App = ()=> {
   const [events, setEvents] = useState([]);
@@ -15,10 +15,16 @@ const App = ()=> {
   const [currentCity, setCurrentCity]= useState('See all Cities');
   const [infoAlert, setInfoAlert] = useState("");
   const [errorAlert, setErrorAlert] = useState("");
+  const [warningAlert, setWarningAlert] = useState("");
 
   // populating the list when App component is mounted
   useEffect(()=>{
     fetchData();
+    if(navigator.onLine){
+      setWarningAlert("");
+    }else{
+      setWarningAlert("You are currently in offline mode, only data is available for you from the cache.")
+    }
   }, [currentCity, currentNOE]);
   
   const fetchData = async ()=>{
