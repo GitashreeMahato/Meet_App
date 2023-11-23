@@ -7,8 +7,6 @@
   /* background-color: #adade6; */
   background-image: linear-gradient(180deg, rgb(244, 249, 249), rgb(243, 244, 242));
   background-color: transparent;
-  
-
 }
 
 .App * {
@@ -163,6 +161,7 @@ input[type="number"]
   box-shadow: 0 4px 11px 0 rgba(227, 111, 111, 0.15),
     0 1px 3px 0 rgba(226, 103, 121, 0.2);
 }
+
 /* --------- Alert  ------------ */
 .alerts-container {
   position: fixed;
