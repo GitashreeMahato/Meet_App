@@ -10,11 +10,11 @@ const Event = ({ event }) => {
   };
 
   return (
-    <>
-      <li className='event'>
-        <p className='location'>{event.location}</p>
-        <p className='summary'>{event.summary}</p>
-        <p className='created'>{(event.created)}</p>
+    <div className='event'>
+      {/* <li > */}
+        <h2 className='summary'>{event.summary}</h2>
+        <p className='created'>{event && new Date(event.start.dateTime).toUTCString()}</p>
+        <p className='location'>{`@${event.summary} | ${event.location}`}</p>
       {showDetails ? (<div 
       id='event-details' 
       className="event-details des-info animate__animated animate__fadeIn">
@@ -29,8 +29,8 @@ const Event = ({ event }) => {
         > {showDetails ? 'hide details' : 'show details' }
         </button>
         
-      </li>
-    </>
+      
+    </div>
   );
 };
 
