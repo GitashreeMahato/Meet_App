@@ -42,6 +42,8 @@ const App = ()=> {
        <div className='meet-app-bg'>
        <div>
          <h1>Meet App</h1>
+         {/* <p className='site-title'>where ideas ignite</p> */}
+         
          {/* <a href='https://gitashreemahato.github.io/Meet_App/'>
            <img src={logo} className='meet-app-logo' alt='meet-app-logo'width={200} height={80} />
          </a> */}

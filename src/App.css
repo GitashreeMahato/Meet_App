@@ -13,6 +13,16 @@
   box-sizing: border-box;
 
 }
+/* .site-title{
+  content: "tuan phan";
+    display: block;
+    font-size: 20px;
+    font-family: monospace;
+    margin-bottom:20px;
+    font-weight: normal;
+    text-align: center;
+  color: #3434e8;
+} */
 h1{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 80px;
@@ -189,6 +199,7 @@ input[type="number"]
         width: 105%;
         width: 90vw;
         height: 1300px;
+      
     }
 
   }
